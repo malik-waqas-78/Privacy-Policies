@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Policy • Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Expense Tracker mobile application.">
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#111827; --muted:#6b7280; --card:#f9fafb; --border:#e5e7eb;
+      --accent:#2563eb;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b0f14; --fg:#e5e7eb; --muted:#9ca3af; --card:#10161d; --border:#1f2937; --accent:#60a5fa; }
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif; background:var(--bg); color:var(--fg);}
+    .container{max-width:900px; margin:0 auto; padding:32px 20px;}
+    header{margin-bottom:24px; padding-bottom:16px; border-bottom:1px solid var(--border);}
+    h1{font-size:1.8rem; margin:0 0 6px;}
+    .muted{color:var(--muted)}
+    h2{margin-top:28px; font-size:1.25rem}
+    h3{margin-top:20px; font-size:1.05rem}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px; margin:12px 0}
+    ul{padding-left:1.2rem}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    code{background:var(--card); padding:2px 6px; border-radius:6px; border:1px solid var(--border)}
+    footer{margin-top:28px; padding-top:16px; border-top:1px solid var(--border); font-size:0.95rem}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Privacy Policy for Expense Tracker</h1>
+      <div class="muted"><strong>Last updated:</strong> August 29, 2025</div>
+    </header>
+
+    <section>
+      <p>This Privacy Policy describes our policies and procedures on the collection, use, and disclosure of your information when you use the Service and tells you about your privacy rights and how the law protects you.</p>
+    </section>
+
+    <section class="card">
+      <h2>Our Commitment to Your Privacy</h2>
+      <p><strong>Expense Tracker is a completely local application.</strong> We do not collect, store, or share any of your personal data. All information you enter into the app—including your expenses, categories, and budgets—is stored only on your device.</p>
+    </section>
+
+    <section>
+      <h2>Information We Do Not Collect</h2>
+      <ul>
+        <li><strong>Personal Information:</strong> We do not collect your name, email address, phone number, or similar identifiers.</li>
+        <li><strong>Financial Information:</strong> We do not collect bank account numbers, card numbers, or credentials.</li>
+        <li><strong>Usage Data:</strong> We do not track how you use the app.</li>
+        <li><strong>Device Information:</strong> We do not collect device identifiers, IP address, or other device metadata.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>On-Device Storage & Data Control</h2>
+      <p>All data is stored locally on your device. You can delete your data at any time by clearing the app’s data or uninstalling the app. We do not have access to your data.</p>
+    </section>
+
+    <section>
+      <h2>Permissions</h2>
+      <ul>
+        <li><code>android.permission.POST_NOTIFICATIONS</code> — Used to send local notifications and reminders related to your expenses and budgets. Notifications are generated and managed <strong>locally on your device</strong> and are not sent to external servers.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Third-Party Services & Google Libraries</h2>
+      <p>This app may include Google or other third-party libraries to enable Android features. <strong>We do not send your personal data to these services from within the app.</strong> However, some SDKs may <em>independently</em> collect limited technical information as described in their own privacy policies.</p>
+
+      <h3>How We Configure SDKs</h3>
+      <ul>
+        <li>We only include SDKs that are necessary for app functionality.</li>
+        <li>Where supported, we disable personalized data collection by default unless strictly needed (e.g., for crash diagnosis).</li>
+        <li>If an SDK is optional (e.g., Analytics/Ads), we will show an in-app notice or setting before enabling it (if implemented in your build).</li>
+      </ul>
+
+      <p><strong>Your action:</strong> Edit this section to list only the SDKs you actually use. If you use none, state: “This app does not use Firebase, AdMob, or other data-collecting SDKs.”</p>
+    </section>
+
+    <section>
+      <h2>Children’s Privacy</h2>
+      <p>The app is not directed to children under the age of 13. We do not knowingly collect data from children. If you believe a child has provided data to us, please contact us and we will assist with deletion instructions (local data resides only on the device).</p>
+    </section>
+
+    <section>
+      <h2>Changes to this Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will post the new Privacy Policy on this page and update the “Last updated” date above. Changes are effective when posted.</p>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, you can contact us:</p>
+      <ul>
+        <li>By email: <a href="mailto:malikwaqasm78@gmail.com">malikwaqasm78@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <footer class="muted">
+      <p>© <span id="year"></span> Expense Tracker. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
